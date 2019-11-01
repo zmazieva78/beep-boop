@@ -15,7 +15,7 @@ This is a web application that takes a number from a user and returns a range of
 > * _The number **21** should be replaced with **"Boop"**._
 > * _The number **32** should be replaced with **"I'm sorry, ```name```. I'm afraid I can't do that"**_
 
-*Example:* If a user inputs a *5*, the program should display a list of values: *"0"*, *"Beep!"*, *"Boop"*, *"I'm Sorry...", 4, 5*
+**Example:** If a user inputs a **5**, the program should display a list of values: ```"0", "Beep!", "Boop", "I'm Sorry...", 4, 5```
 
 ## Technologies used
 
