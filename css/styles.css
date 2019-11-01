@@ -1,3 +1,23 @@
 #submitButton, .form-control {
   margin-top: 10px;
 }
+.jumbotron {
+  background-image: url("../img/background.webp");
+  background-size: cover;
+  height: 150px;
+}
+body {
+  background-image: url("../img/robot2.gif");
+  background-size: cover;
+}
+.input-group {
+  margin: 20px;
+}
+.input-group-text, .input-group-prepend {
+  padding-top: 15px;
+  font-weight: 400;
+  font-size: 18px;
+}
+p, .text {
+  font-size: 18px;
+}
