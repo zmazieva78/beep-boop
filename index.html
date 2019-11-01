@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Beep Boop</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron" style="text-align:center">
+        <h1>Beep Boop</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <form>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Enter your name</span>
+              </div>
+              <input id="inputName" type="text" class="form-control">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Enter a number</span>
+              </div>
+              <input id="inputNumber" type="text" class="form-control">
+              <button id="submitButton" class="btn btn-primary"type="button" name="button">Enter</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-8">
+          <div class="outputWindow">
+            <div class="info">
+              <h2>Let's play a game!</h2>
+              <p>Look at the form on your screen. Enter your name and number then push submit button. See what result it will give you</p>
+            </div>
+            <div class="inputResult">
+              <div class="text">
+                <p id="textInput"> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
