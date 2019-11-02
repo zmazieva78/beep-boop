@@ -28,31 +28,47 @@ $(function() {
     event.preventDefault();
 
     var nameInput = $("#inputName").val();
+    if (nameInput.trim() === "") {
+      alert("Please, enter your name!");
+      return;
+    }
+
     var numberInput = $("#inputNumber").val();
     if (isNaN(numberInput)) {
       alert("Please, enter number!");
-    } else {
+      return;
+    }
 
-      let number = parseInt(numberInput);
+    if (numberInput.trim() === "") {
+      alert("Please, enter number!");
+      return;
+    }
 
-      var result = "";
+    let number = parseInt(numberInput);
 
+    if (number > 5000 || number < 1) {
+      alert("Please, enter valid number more than 0 or less than 5000!");
+      return;
+    }
 
-  // This for loop statement takes number and add one by one digit starting form 0 all the way up to inputed number.
-      for (var num = 0; num <= number; num++) {
-        let res = beepBoop(nameInput, num);
+    var result = "";
 
-        if (result === "") {
-          result += res;
-        } else {
-          result += ", " + res;
-        };
+    // This for loop statement takes number and add one by one digit starting form 0 all the way up to inputed number.
+    for (var num = 0; num <= number; num++) {
+      let res = beepBoop(nameInput, num);
 
-      };
-  // Here we display result in HTML page
-      $(".info").hide();
-      $(".text").text(result);
-    };
+      if (result === "") {
+        result += res;
+      } else {
+        result += ", " + res;
+      }
+
+    }
+
+    // Here we display result in HTML page
+    $(".info").hide();
+    $(".text").text(result);
+    
   });
 
 });
